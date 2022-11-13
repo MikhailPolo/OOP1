@@ -1,4 +1,4 @@
-package ru.netology.java;
+/*package ru.netology.java;
 
 public class Radio2 {
     public int currentStation;
@@ -60,4 +60,5 @@ public class Radio2 {
             currentVolume = currentVolume + 1;
         }
     }
-}
+}*/
+
