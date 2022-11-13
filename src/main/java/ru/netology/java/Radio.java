@@ -1,9 +1,16 @@
 package ru.netology.java;
 
-public class Radio3 {
+public class Radio {
     private int station;
+
     public int getStation() {
         return station;
+    }
+
+    private int volume;
+
+    public int getVolume() {
+        return volume;
     }
 
     public void setStation(int newStation) {
@@ -16,25 +23,6 @@ public class Radio3 {
         station = newStation;
     }
 
-    public void nextStation() {
-        if (station < 9) {
-            station = station + 1;
-            return;
-        } station = 0;
-    }
-
-    public void prevStation() {
-        if (station > 0) {
-            station = station - 1;
-        } else station = 9;
-    }
-
-    private int volume;
-
-    public int getVolume() {
-        return volume;
-    }
-
     public void setVolume(int newVolume) {
         if (newVolume < 0) {
             return;
@@ -44,11 +32,29 @@ public class Radio3 {
         }
         volume = newVolume;
     }
+
+    public void nextStation() {
+        if (station < 9) {
+            station = station + 1;
+            return;
+        }
+        station = 0;
+    }
+
+    public void prevStation() {
+        if (station > 0) {
+            station = station - 1;
+        } else {
+            station = 9;
+        }
+    }
+
     public void nextVolume() {
         if (volume < 10) {
             volume = volume + 1;
         }
     }
+
     public void prevVolume() {
         if (volume > 0) {
             volume = volume - 1;
