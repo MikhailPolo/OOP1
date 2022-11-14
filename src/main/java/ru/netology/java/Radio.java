@@ -2,14 +2,15 @@ package ru.netology.java;
 
 public class Radio {
     private int station;
+    private int volume;
 
     public int getStation() {
+
         return station;
     }
 
-    private int volume;
-
     public int getVolume() {
+
         return volume;
     }
 
