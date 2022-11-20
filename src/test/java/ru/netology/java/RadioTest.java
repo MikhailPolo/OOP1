@@ -117,11 +117,11 @@ public class RadioTest {
     @Test
     public void nextMaxVolume() {
         Radio radio = new Radio();
-        radio.setVolume(10);
+        radio.setVolume(100);
 
         radio.nextVolume();
 
-        int expected = 10;
+        int expected = 100;
         int actual = radio.getVolume();
 
         Assertions.assertEquals(expected, actual);
@@ -167,7 +167,7 @@ public class RadioTest {
     @Test
     public void setNeverMaxVolume() {
         Radio radio = new Radio();
-        radio.setVolume(11);
+        radio.setVolume(101);
 
         int expected = 0;
         int actual = radio.getVolume();
